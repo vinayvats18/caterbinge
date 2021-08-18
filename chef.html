@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Become a Chef</title>
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="redicon.png"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+  <style>
+
+    body{
+      overflow-x:hidden;
+    }
+    .topnav {
+      /* background-color: black; */
+      overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav li {
+      float: left;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      border-bottom: 3px solid transparent;
+    }
+
+    .topnav{
+      /* background-color: black; */
+      overflow: hidden;
+    }
+
+    .topnav li:hover {
+      border-bottom: 3px solid #c21630;
+    }
+
+    .topnav li.active {
+      border-bottom: 3px solid #c21630;
+    }
+
+    /* * {
+  margin: 0;
+  height: 0;
+} */
+
+.first {
+  margin-top: -45px;
+}
+
+.slanted {
+  height: 500px;
+  background-image: url('chef.jpg');
+  background-size:cover;
+  -webkit-transform: skewy(-3deg);
+  transform: skewy(-3deg);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+.div-top{
+  display: none;
+}
+}
+
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
+    <div class="container">
+      <a class="navbar-left" href="index.html"><img src = "redicon.png" style="max-width:50px; margin-top: 5px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span>Menu <i class="fas fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto text-white topnav">
+          <li class="nav-item active" style="margin-right: 10px;">
+            <a class="nav-link nava js-scroll-trigger" href="index.html#home">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link nava js-scroll-trigger" href="index.html#about">ABOUT US</a>
+          </li>
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link nava js-scroll-trigger" href="index.html#whyus">WHY US</a>
+          </li>
+          <li class="nav-item " style="margin-right: 10px;">
+            <a class="nav-link nava js-scroll-trigger" href="index.html#services">SERVICES</a>
+          </li>
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link nava js-scroll-trigger" href="index.html#partner">PARTNERS</a>
+          </li>
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link nava js-scroll-trigger" href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Home -->
+
+<section id="slantimg">
+  <div class="slanted first" style="background-color:#2ecc71;"></div>
+
+</section>
+
+<main class="my-form row" style="margin: auto;">
+<div class="col-xl-6 col-lg-6 col-md-8 col-sm-12" style="margin: auto;">
+    <div class="row justify-content-center">
+                <div class="card">
+                    <div class="card-body">
+                        <form name="my-form" onsubmit="return validform()" action="success.php" method="">
+
+                            <div class="form-group row">
+                            <label for="inputText" class="col-sm-6 col-form-label">Full Name</label>
+                            <div class="col-sm-6">
+                            <input type="text" class="form-control" id="inputName" placeholder="Enter Full Name">
+                            </div>
+                            </div>
+
+                            <div class="form-group row">
+                            <label for="inputText" class="col-sm-6 col-form-label">Age</label>
+                            <div class="col-sm-6">
+                            <input type="text" class="form-control" id="inputName" placeholder="Enter Age">
+                            </div>
+                            </div>
+
+                            <div class="form-group row">
+                            <label for="gender" class="col-sm-6 col-form-label">Gender</label>
+                            <div class="col-sm-6">
+                              <select id="cars" name="cars" style="width: inherit; height: 30px;">
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="other">Other</option>
+</select>
+                            </div>
+                            </div>
+
+                            <div class="form-group row">
+                            <label for="inputText" class="col-sm-6 col-form-label">Phone</label>
+                            <div class="col-sm-6">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="0000 0000 0000">
+                            </div>
+                            </div>
+
+                            <div class="form-group row">
+                            <label for="inputEmail" class="col-sm-6 col-form-label">Email</label>
+                            <div class="col-sm-6">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="name@domain.com">
+                            </div>
+                            </div>
+
+                            <div class="form-group row">
+                            <label for="inputText" class="col-sm-6 col-form-label">State</label>
+                            <div class="col-sm-6">
+                            <input type="text" class="form-control" id="inputState" placeholder="Enter State">
+                            </div>
+                            </div>
+
+                            <div class="form-group row">
+                            <label for="inputText" class="col-sm-6 col-form-label">City</label>
+                            <div class="col-sm-6">
+                            <input type="text" class="form-control" id="inputCity" placeholder="Enter City">
+                            </div>
+                            </div>
+
+                            <div class="form-group row">
+                            <label for="inputText" class="col-sm-6 col-form-label">Cuisines that you are proficient in</label>
+                            <div class="col-sm-6">
+                            <input type="text" class="form-control" id="inputPro" placeholder="Enter Here..">
+                            </div>
+                            </div>
+
+
+
+
+                            <div class="form-group row">
+                                <label for="inputText" class="col-sm-6 col-form-label">About Yourself</label>
+                                <div class="col-sm-6">
+                                    <textarea id="about" class="form-control" placeholder="Enter here..."  rows="4" cols="50"></textarea>
+                                </div>
+                            </div>
+
+                                <div class="form-group row">
+                                  <label for="" class="col-sm-6 col-form-label"></label>
+                                  <div class="col-sm-6">
+                                    <button type="submit" class="btn btn-primary" style="width: inherit; background-color: #c21630;">
+                                    Submit
+                                    </button>
+                                  </div>
+
+                                </div>
+
+                        </form>
+                      </div>
+                      </div>
+
+                      </div>
+                    </div>
+
+
+    <div class="resthelp col-xl-6 col-lg-6 col-md-8 col-sm-12" style="margin: auto;">
+      <h3 style="color: #434343; font-size: 15px;">Easy integration</h3>
+      <p style="color: #434343;">Sell across any of the online food delivery platforms such as Swiggy, Zomato, Uber Eats all under one roof.</p><br>
+      <h3 style="color: #434343; font-size: 15px;">Work with ease. Zero hassle, no struggle</h3>
+      <p style="color: #434343;">We take care of Maintenance, Dining, Marketing all you got to do is cook it the most delicious way you ever can.</p><br>
+      <h3 style="color: #434343; font-size: 15px;">Be an independent brand</h3>
+      <p style="color: #434343;">Represent yourself as a brand for your dishes you cook. We get you leads, our current partners clocking 6X% more than the usual.</p><br>
+      <h3 style="color: #434343; font-size: 15px;">Automation in kitchen workflow</h3>
+      <p style="color: #434343;">Efficient and smoother workflow with simple reporting tools for you to understand the consumer requirement and save unnecessary costs by not wasting food at production and consumer level.</p><br>
+      </div>
+
+</main>
+
+
+
+
+<footer class="footer text-center" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+    <div class="container">
+        <div class="row" style="margin: auto;">
+
+            <div class="footlogo" style="margin:auto;">
+              <img src="redicon.png" alt="logo" style="width:80px; height:80px;">
+            </div>
+
+            <div class="footmenu row" style="margin: auto;">
+              <a href="index.html#about" class="col-lg-3 col-sm-12" style="margin: 10px 25px; text-decoration: none; color:#c21630">ABOUT US</a>
+              <a href="contact.html" class="col-lg-3 col-sm-12" style="margin: 10px 25px; text-decoration: none; color:#c21630">CONTACT US</a>
+              <a href="tandc.html" class="col-lg-3 col-sm-12" style="margin: 10px 25px; text-decoration: none; display: inline; color:#c21630;">TERMS AND CONDITIONS</a>
+            </div>
+
+            <div class="social" style="margin:auto;">
+              <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/caterbinge" style="background: black;"><i class="fab fa-fw fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/caterbinge/" style="background: black;"><i class="fab fa-fw fa-instagram"></i></a>
+            </div>
+
+
+              </div>
+
+              <br><br>
+
+            <div class="div_top">
+              <div class=" row">
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6" style="display:inline-block;">
+                  <img src="f1.png" alt="f1">
+                  <p style="display:inline-block; color: black;">Taste Assured Food Safety</p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12" style="display:inline-block;">
+                  <img src="f2.png" alt="f1">
+                  <p style="display:inline-block; color: black;">Secure Payment</p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12" style="display:inline-block;">
+                  <img src="f3.png" alt="f1">
+                  <p style="display:inline-block; color: black;">24hrs free Cancellation</p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12" style="display:inline-block;">
+                  <img src="f4.png" alt="f1">
+                  <p style="display:inline-block; color: black;">100% Halal Food</p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12" style="display:inline-block;">
+                  <img src="f5.png" alt="f1">
+                  <p style="display:inline-block; color: black;">Certified Professionals</p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12" style="display:inline-block;">
+                  <img src="f6.png" alt="f1">
+                  <p style="display:inline-block; color: black;">Money Back Guarantee</p>
+                </div>
+
+
+              </ul>
+            </div>
+
+    </div>
+    <div class="container"><small>© Caterbinge 2018. All Rights Reserved</small></div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
